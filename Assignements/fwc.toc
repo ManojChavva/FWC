@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {I}Components}{1}{}%
+\contentsline {section}{\numberline {II}Introduction}{1}{}%
+\contentsline {section}{\numberline {III}Circuit Diagram}{1}{}%
+\contentsline {section}{\numberline {IV}Procedure}{1}{}%
+\contentsline {section}{\numberline {V}Truth Table}{2}{}%
