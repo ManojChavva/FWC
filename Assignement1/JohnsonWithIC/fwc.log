@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.22)  26 AUG 2022 14:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.22)  26 AUG 2022 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -622,14 +622,55 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-(./fwc.toc)
+(./fwc.toc
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \contentsline
+                  {section}{\numberline {IV}Procedure}{1}{section.4}%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \contentsline
+                  {section}{\numberline {IV}Procedure}{1}{section.4}%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (23.36198pt too wide) in paragraph at lines 2--4
+[]\OT1/ptm/m/n/12 section[]Introduction1section.2[]\OT1/ptm/b/n/12 Circuit 
+ []
+
+)
+Runaway argument?
+! File ended while scanning use of \oldcontentsline.
+<inserted text> 
+                \par 
+l.16 \tableofcontents
+                     
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
 \tf@toc=\write4
 \openout4 = `fwc.toc'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
-[]\OT1/ptm/b/it/10 Abstract\OT1/ptm/b/n/10 ---This Man-ual shows the de-sign an
-d
+Underfull \hbox (badness 8075) in paragraph at lines 4--20
+[]\OT1/ptm/m/n/12 section[]Procedure1section.4 \OT1/ptm/b/it/10 Ab-stract\OT1/p
+tm/b/n/10 ---This
  []
 
 
@@ -647,51 +688,65 @@ File: counter.jpg Graphic file (type jpg)
 <use counter.jpg>
 Package pdftex.def Info: counter.jpg  used on input line 68.
 (pdftex.def)             Requested size: 227.62161pt x 119.50586pt.
+
+Underfull \hbox (badness 3281) in paragraph at lines 82--83
+[]\OT1/ptm/m/n/12 Connect the two 7474 IC's, LED's and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+\OT1/ptm/m/n/12 Au-r-dino ac-cord-ing to ta-ble ICon-nec-tion
+ []
+
 <7474.png, id=5, 622.325pt x 310.15875pt>
 File: 7474.png Graphic file (type png)
 <use 7474.png>
 Package pdftex.def Info: 7474.png  used on input line 91.
 (pdftex.def)             Requested size: 142.2581pt x 85.3578pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./counter.jpg> <./7474.png>]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 102.
+ <./counter.jpg>]
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 106.
 
-Overfull \hbox (292.99304pt too wide) in paragraph at lines 102--109
+Overfull \hbox (292.99304pt too wide) in paragraph at lines 106--113
  [][] 
  []
 
 
-Overfull \hbox (8.21219pt too wide) in paragraph at lines 124--140
+Overfull \hbox (8.21219pt too wide) in paragraph at lines 128--144
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 []\OT1/ptm/m/n/12 Thus the John-son counter de-signed and
  []
 
-[2
+[2 <./7474.png>] (./fwc.aux)
 
-] (./fwc.aux) ) 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 16496 strings out of 478287
- 329105 string characters out of 5849289
- 613688 words of memory out of 5000000
- 34439 multiletter control sequences out of 15000+600000
+ 16505 strings out of 478287
+ 329252 string characters out of 5849289
+ 614688 words of memory out of 5000000
+ 34448 multiletter control sequences out of 15000+600000
  504556 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,9n,103p,464b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pf
-b>
-Output written on fwc.pdf (2 pages, 106620 bytes).
+ 99i,9n,103p,464b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on fwc.pdf (2 pages, 106375 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
