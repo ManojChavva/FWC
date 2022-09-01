@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.22)  1 SEP 2022 11:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.22)  1 SEP 2022 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -818,7 +818,7 @@ Package pdftex.def Info: 7474.png  used on input line 93.
  <./counter.jpg> <./7474.png>]
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 104.
 
-Overfull \hbox (268.48857pt too wide) in paragraph at lines 104--111
+Overfull \hbox (211.70537pt too wide) in paragraph at lines 104--111
  [][] 
  []
 
@@ -858,7 +858,7 @@ fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on fwc.pdf (2 pages, 108485 bytes).
+Output written on fwc.pdf (2 pages, 108476 bytes).
 PDF statistics:
  116 PDF objects out of 1000 (max. 8388607)
  95 compressed objects within 1 object stream

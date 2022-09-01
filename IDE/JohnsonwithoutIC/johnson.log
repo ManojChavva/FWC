@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.22)  1 SEP 2022 11:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.22)  1 SEP 2022 14:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -577,11 +577,7 @@ See the caption package documentation for explanation.
 \c@caption@flags=\count316
 \c@continuedfloat=\count317
 Package caption Info: listings package is loaded.
-) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -656,6 +652,11 @@ Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
 \c@Hy@tempcnt=\count321
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen294
 
@@ -714,24 +715,24 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (./johnson.aux)
 \openout1 = `johnson.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 -- Lines per column: 50 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -760,7 +761,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -773,9 +774,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count335
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
 
 (./johnson.out) (./johnson.out)
 \@outlinefile=\write4
@@ -786,7 +787,7 @@ LaTeX Info: Redefining \nameref on input line 18.
 \openout5 = `johnson.toc'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--25
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
 []\OT1/ptm/b/it/10 Abstract\OT1/ptm/b/n/10 ---This Man-ual shows the de-sign an
 d
  []
@@ -794,11 +795,11 @@ d
 <counter.jpg, id=32, 411.78844pt x 164.86594pt>
 File: counter.jpg Graphic file (type jpg)
 <use counter.jpg>
-Package pdftex.def Info: counter.jpg  used on input line 72.
+Package pdftex.def Info: counter.jpg  used on input line 71.
 (pdftex.def)             Requested size: 227.62161pt x 119.50586pt.
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 96.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 95.
 
-Overfull \hbox (37.75511pt too wide) in paragraph at lines 96--101
+Overfull \hbox (37.75511pt too wide) in paragraph at lines 95--100
  [][] 
  []
 
@@ -806,17 +807,17 @@ Overfull \hbox (37.75511pt too wide) in paragraph at lines 96--101
 
 
  <./counter.jpg>]
-Overfull \hbox (283.83235pt too wide) in paragraph at lines 110--117
+Overfull \hbox (227.04915pt too wide) in paragraph at lines 109--116
  [][] 
  []
 
 
-Overfull \hbox (8.21219pt too wide) in paragraph at lines 133--149
+Overfull \hbox (8.21219pt too wide) in paragraph at lines 132--148
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 []\OT1/ptm/m/n/12 Thus the John-son counter de-signed and
  []
 
@@ -829,7 +830,7 @@ Package rerunfilecheck Info: File `johnson.out' has not changed.
 Here is how much of TeX's memory you used:
  23265 strings out of 478287
  435458 string characters out of 5849289
- 711825 words of memory out of 5000000
+ 711817 words of memory out of 5000000
  41070 multiletter control sequences out of 15000+600000
  504556 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -841,7 +842,7 @@ fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on johnson.pdf (2 pages, 100037 bytes).
+Output written on johnson.pdf (2 pages, 100021 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  94 compressed objects within 1 object stream
