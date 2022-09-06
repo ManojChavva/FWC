@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.22)  1 SEP 2022 14:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.22)  6 SEP 2022 11:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -797,28 +797,22 @@ File: counter.jpg Graphic file (type jpg)
 <use counter.jpg>
 Package pdftex.def Info: counter.jpg  used on input line 71.
 (pdftex.def)             Requested size: 227.62161pt x 119.50586pt.
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 95.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 96.
 
-Overfull \hbox (37.75511pt too wide) in paragraph at lines 95--100
+Overfull \hbox (37.75511pt too wide) in paragraph at lines 96--101
  [][] 
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+40.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./counter.jpg>]
-Overfull \hbox (227.04915pt too wide) in paragraph at lines 109--116
- [][] 
- []
-
-
-Overfull \hbox (8.21219pt too wide) in paragraph at lines 132--148
+Overfull \hbox (218.00336pt too wide) in paragraph at lines 170--182
  [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-[]\OT1/ptm/m/n/12 Thus the John-son counter de-signed and
  []
 
 [2
@@ -828,24 +822,23 @@ Package rerunfilecheck Info: File `johnson.out' has not changed.
 (rerunfilecheck)             Checksum: D16AAEB7B0CAD5ACC968A579CE7B0EDB;506.
  ) 
 Here is how much of TeX's memory you used:
- 23265 strings out of 478287
- 435458 string characters out of 5849289
- 711817 words of memory out of 5000000
- 41070 multiletter control sequences out of 15000+600000
- 504556 words of font info for 92 fonts, out of 8000000 for 9000
+ 23493 strings out of 478287
+ 439985 string characters out of 5849289
+ 716817 words of memory out of 5000000
+ 41295 multiletter control sequences out of 15000+600000
+ 504870 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,9n,103p,468b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,8n,103p,468b,737s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on johnson.pdf (2 pages, 100021 bytes).
+fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on johnson.pdf (2 pages, 94801 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
- 31 named destinations out of 1000 (max. 500000)
+ 108 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 30 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
