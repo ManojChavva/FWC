@@ -1,4 +1,4 @@
-.include "/home/anu/anusha1/m328Pdef.inc"
+.include "/home/manoj/assembly/m328Pdef.inc"
 
 .def led1 = r20
 .def mask=r21
