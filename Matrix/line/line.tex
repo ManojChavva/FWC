@@ -1,0 +1,171 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage[cmex10]{amsmath}
+\usepackage{array}
+\usepackage{gensymb}
+\usepackage{booktabs}
+\usepackage{etoolbox}
+\patchcmd{\section}{\centering}{}{}{}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+
+\title{Matrix Problems \textbf{\\Straight Lines }}
+\author{Manoj Chavva} 
+
+\begin{document}
+\maketitle
+
+Get Python code for the figure from 
+\begin{lstlisting}
+https://github.com/SurabhiSeetha/Fwciith2022/tree/main/Assignment%201/codes/src
+\end{lstlisting}
+Get LaTex code from
+\begin{lstlisting}
+https://github.com/SurabhiSeetha/Fwciith2022/tree/main/avr%20gcc
+\end{lstlisting}
+
+\section{Problem Statement}
+
+\noindent The base of an equilateral triangle with side 2a lies along the y-axis such that the mid-point of the base is at the origin. Find vertices of the triangle.
+
+
+\section{Solution}
+\noindent Given ABC is an equilateral triangle i.e 
+\begin{equation}
+AB = BC = CA  
+\end{equation}
+
+\begin{figure}[h]
+\includegraphics[width=1\columnwidth]{triangle.png}
+\caption{Equilateral Triangle ABC}
+\label{fig:triangle}
+\end{figure}
+
+\section{Construction}
+B and C are the inputs.
+\begin{table}[h]
+\centering
+\large
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Symbol} & \textbf{Value} & \textbf{Description} \\ \hline
+B               & (0, 2)         & Vertex B             \\ \hline
+C               & (0, -2)        & Vertex C             \\ \hline
+A               & (x,y)          & Vertex A             \\ \hline
+A1              & (x1, y1)       & Vertex A1            \\ \hline
+\end{tabular}
+\end{table}
+
+\noindent Since base with 2a is lies on the y-axis with the mid-point of the base is at origin. The vertices of the two points on y-axis will be
+
+\begin{equation}
+\vec{B}=\begin{pmatrix} 
+0\\
+a
+\end{pmatrix}, {
+\vec{C}=\begin{pmatrix} 
+0\\
+-a
+\end{pmatrix} }
+\end{equation}
+%$\vec{B}(0 , a)$ and $\vec{A}(x, y)$ 
+
+%\noindent It is known that the line joining a vertex of an equilateral triangle with the midpoint of its opposite side is perpendicular. \\
+
+
+%\noindent Since, the mid point lies on origin. The vertex \textbf{A} lies on the x-axis.\\
+
+%\noindent So, The vertex will be \\
+
+
+%begin{equation}
+%\vec{A}=\begin{pmatrix} 
+%x\\
+%0
+%\end{pmatrix}
+%\end{equation}
+
+\noindent The distance between the two points B and A is
+%\begin{equation}
+%\vec{B} = \myvec{0 \\ a}, \vec{A}=\myvec{x \\ 0}
+%\end{equation}
+
+\begin{equation}	
+\vec{B}-\vec{A} = \myvec{0-x \\ a-y}
+\end{equation}
+
+\noindent Using the definition   of the norm, 
+		\begin{equation}
+\norm{\vec{B}-\vec{A}} =\norm{\myvec{-x \\ a-y}}
+\end{equation}
+\noindent Since, the side of an equilateral triangle is 2a	
+\begin{equation}						
+			2a=\sqrt{\myvec{-x & a-y}\myvec{-x \\ a-y}} 
+\\
+\end{equation}
+\begin{equation}						
+2a =  \sqrt{(x)^2+ (a-y)^2}
+\end{equation}
+\noindent Squaring on both sides
+
+\begin{equation}						
+4a^2 =  {(x)^2+ (a-y)^2}
+\end{equation}
+\begin{equation}
+4a^2 = {x^2 + a^2 +y^2-2ay}
+\end{equation}
+\begin{equation}
+3a^2 = {x^2+y^2-2ay}
+\label{eq-1-}
+\end{equation}
+
+\noindent Similarly, The distance between the two points C and A is
+
+\begin{equation}	
+\vec{C}-\vec{A} = \myvec{0-x \\ -a-y}
+\end{equation}
+
+\noindent Using the definition   of the norm, 
+		\begin{equation}
+\norm{\vec{C}-\vec{A}} =\norm{\myvec{-x \\ -a-y}}
+\end{equation}
+\noindent Since, the side of an equilateral triangle is 2a	
+\begin{equation}						
+			2a=\sqrt{\myvec{-x & -a-y}\myvec{-x \\ -a-y}} 
+\end{equation}
+\begin{equation}						
+2a =  \sqrt{(x)^2+ (a+y)^2}
+\end{equation}
+\noindent Squaring on both sides
+\begin{equation}						
+4a^2 =  {(x)^2+ (a+y)^2}
+\end{equation}
+\begin{equation}
+4a^2 = {x^2 + a^2 +y^2+2ay}
+\end{equation}
+\begin{equation}
+3a^2 = {x^2+y^2+2ay}
+\label{eq-2-}
+\end{equation}
+
+
+Solving equation (\ref{eq-1-}) and (\ref{eq-2-}), we get
+\begin{equation*}						
+x =  \pm\sqrt{3}a 
+\end{equation*}
+\begin{equation}						
+y=0
+\end{equation}
+Hence,the coordinates of the vertices of triangle are A(\sqrt{3}a,0),B(0,a) and C(0,−a) \\
+  or\\
+A(−\sqrt{3}a,0),B(0,a) and C(0,−a).
+
+\end{document}
