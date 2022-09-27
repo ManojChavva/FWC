@@ -4,13 +4,6 @@
 import sys                                          #for path to external scripts
 sys.path.insert(0,'/home/manoj/Documents/CoordGeo')         #path to my scripts
 
-#Code by GVV Sharma (works on termux)
-#January 18, 2022
-#License
-#https://www.gnu.org/licenses/gpl-3.0.en.html
-#To verify if the given vertices belong to an isosceles triangle
-
-
 #Python libraries for math and graphics
 import numpy as np
 import matplotlib.pyplot as plt
@@ -37,14 +30,14 @@ O = np.array(([0,0]))
                     
 A_x = (B[0]+C[0]-(np.sqrt(3)*(C[1]-B[1])))/2 # This computes the x coordinate of the third vertex.
 A_y = (B[1]+C[1]+np.sqrt(3)*(C[0]-B[0]))/2 #This computes the 'y coordinate' of the third vertex. 
-A = np.array([A_x, A_y]) #This is point z, the third vertex. 
+A = np.array([A_x, A_y]) #This is point A, the third vertex. 
 
 print(A)
 
 
 D_x = (B[0]+C[0]+(np.sqrt(3)*(C[1]-B[1])))/2 # This computes the x coordinate of the third vertex.
 D_y = (B[1]+C[1]-np.sqrt(3)*(C[0]-B[0]))/2 #This computes the 'y coordinate' of the third vertex. 
-D = np.array([D_x, D_y]) #This is point z, the third vertex. 
+D = np.array([D_x, D_y]) #This is point A1, the third vertex. 
 print(D)
 #Generating all lines
 x_AB = line_gen(A,B)

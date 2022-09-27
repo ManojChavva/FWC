@@ -16,21 +16,19 @@
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
 \providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
-
+\makeatletter
+\newcommand\xleftrightarrow[2][]{%
+  \ext@arrow 9999{\longleftrightarrowfill@}{#1}{#2}}
+\newcommand\longleftrightarrowfill@{%
+  \arrowfill@\leftarrow\relbar\rightarrow}
+\makeatother
 \title{Matrix Problems \textbf{\\Straight Lines }}
 \author{Manoj Chavva} 
 
 \begin{document}
 \maketitle
 
-Get Python code for the figure from 
-\begin{lstlisting}
-https://github.com/SurabhiSeetha/Fwciith2022/tree/main/Assignment%201/codes/src
-\end{lstlisting}
-Get LaTex code from
-\begin{lstlisting}
-https://github.com/SurabhiSeetha/Fwciith2022/tree/main/avr%20gcc
-\end{lstlisting}
+
 
 \section{Problem Statement}
 
@@ -49,20 +47,7 @@ AB = BC = CA
 \label{fig:triangle}
 \end{figure}
 
-\section{Construction}
-B and C are the inputs.
-\begin{table}[h]
-\centering
-\large
-\begin{tabular}{|l|l|l|}
-\hline
-\textbf{Symbol} & \textbf{Value} & \textbf{Description} \\ \hline
-B               & (0, 2)         & Vertex B             \\ \hline
-C               & (0, -2)        & Vertex C             \\ \hline
-A               & (x,y)          & Vertex A             \\ \hline
-A1              & (x1, y1)       & Vertex A1            \\ \hline
-\end{tabular}
-\end{table}
+
 
 \noindent Since base with 2a is lies on the y-axis with the mid-point of the base is at origin. The vertices of the two points on y-axis will be
 
@@ -114,14 +99,15 @@ a
 \begin{equation}						
 2a =  \sqrt{(x)^2+ (a-y)^2}
 \end{equation}
-\noindent Squaring on both sides
+%\noindent Squaring on both sides
+%
+%\begin{equation}						
+%4a^2 =  {(x)^2+ (a-y)^2}
+%\end{equation}
+%\begin{equation}
+%4a^2 = {x^2 + a^2 +y^2-2ay}
+%\end{equation}
 
-\begin{equation}						
-4a^2 =  {(x)^2+ (a-y)^2}
-\end{equation}
-\begin{equation}
-4a^2 = {x^2 + a^2 +y^2-2ay}
-\end{equation}
 \begin{equation}
 3a^2 = {x^2+y^2-2ay}
 \label{eq-1-}
@@ -144,28 +130,132 @@ a
 \begin{equation}						
 2a =  \sqrt{(x)^2+ (a+y)^2}
 \end{equation}
-\noindent Squaring on both sides
-\begin{equation}						
-4a^2 =  {(x)^2+ (a+y)^2}
-\end{equation}
-\begin{equation}
-4a^2 = {x^2 + a^2 +y^2+2ay}
-\end{equation}
+%\texttt{\noindent Squaring on both sides
+%\begin{equation}						
+%4a^2 =  {(x)^2+ (a+y)^2}
+%\end{equation}
+%\begin{equation}
+%4a^2 = {x^2 + a^2 +y^2+2ay}
+%\end{equation}}
 \begin{equation}
 3a^2 = {x^2+y^2+2ay}
 \label{eq-2-}
 \end{equation}
-
-
-Solving equation (\ref{eq-1-}) and (\ref{eq-2-}), we get
-\begin{equation*}						
-x =  \pm\sqrt{3}a 
-\end{equation*}
-\begin{equation}						
-y=0
+\begin{equation}
+\vec{AX} = \vec{B}
 \end{equation}
-Hence,the coordinates of the vertices of triangle are A(\sqrt{3}a,0),B(0,a) and C(0,−a) \\
-  or\\
-A(−\sqrt{3}a,0),B(0,a) and C(0,−a).
+%Solving equation  and , we get
+
+
+Using equation (\ref{eq-1-}) and (\ref{eq-2-}),
+\begin{equation}
+  \begin{pmatrix}
+1 & 2a & 1\\
+1 & -2a & 1
+\end{pmatrix} 
+\begin{pmatrix}
+x^2\\
+y\\
+y^2
+\end{pmatrix} 
+=
+\begin{pmatrix}
+3a^2 \\ 
+3a^2\
+\end{pmatrix}
+\end{equation} 
+
+
+The augmented matrix for the above matrix equation is 
+\vspace{3mm}
+\begin{equation}
+\begin{pmatrix}
+ 1 & 2a & 1 & \vrule & 3a^2\\
+ 1 & -2a & 1  &\vrule & 3a^2
+    \end{pmatrix}  
+    \end{equation}
+    \begin{center}
+   $\xleftrightarrow{\text{$R_2$ $\leftarrow  {R_2}-{R_1}$}}$
+$ \begin{pmatrix}
+  1 & 2a & 1 &\vrule & 3a^2\\
+ 0 & -4a & 0  &\vrule & 0	  
+  \end{pmatrix}$ \\
+   \end{center}
+   \begin{center}
+$ \xleftrightarrow{\text{$R_2$ $\leftarrow  \frac{R_2}{{-4a}} $}} $
+$\begin{pmatrix}
+ 1 & 2a & 1 & \vrule & 3a^2\\
+  0 & 1 & 0 &\vrule & 0\
+  \end{pmatrix}$
+  \\
+  \end{center}
+  \begin{center}
+  $ \xleftrightarrow{\text{$R_1$ $\leftarrow  {R_1}-{2aR_2}$}} $
+$\begin{pmatrix}
+  1 & 0 & 1 & \vrule & 3a^2\\
+  0 & 1 & 0 &\vrule & 0\
+  \end{pmatrix}$
+  \\
+  \end{center}
+  \begin{equation}
+\implies X = 
+   \begin{pmatrix}
+   3a^2 \\ 0
+   \label{eq-3-}
+ \end{pmatrix}
+ \end{equation}
+Using equation (\ref{eq-3-}) we get ,
+\begin{equation}
+	y = 0 \vspace{2mm}
+\end{equation}
+\begin{equation}
+	x^2 = 3a^2 
+\end{equation}
+\begin{equation}						
+x =  \pm\sqrt{3}a 
+\end{equation}
+%\begin{equation}						
+%y=0
+%\end{equation}
+
+
+\noindent Hence,the coordinates of the vertices of triangle are 
+\begin{equation*}						
+\vec{A} = (\pm\sqrt{3}a,0)\\
+\end{equation*}
+\begin{equation*}						
+\vec{B} = (0,a)\\
+\end{equation*}
+\begin{equation*}						
+\vec{C} = (0,-a)\\
+\end{equation*}
+
+
+
+\section{Construction}
+B and C are the inputs.
+\begin{table}[h]
+\centering
+\large
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Symbol} & \textbf{Value} & \textbf{Description} \\ \hline
+B               & (0, 2)         & Vertex B             \\ \hline
+C               & (0, -2)        & Vertex C             \\ \hline
+A               & (x,y)          & Vertex A             \\ \hline
+A1              & (x1, y1)       & Vertex A1            \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\large
+\begin{tabular}{lll}
+\multicolumn{3}{l}{Get Python Code for image from}                                                 \\ \hline
+\multicolumn{3}{|l|}{\url{https://github.com/ManojChavva/FWC/blob/main/Matrix/line/code-py/triangle.py}} \\ 
+ \hline
+\multicolumn{3}{l}{Get LaTex code from}                                                            \\ \hline
+\multicolumn{3}{|l|}{\url{https://github.com/ManojChavva/FWC/blob/main/Matrix/line/line.tex}}            \\ \hline
+\end{tabular}
+\end{table}
 
 \end{document}
