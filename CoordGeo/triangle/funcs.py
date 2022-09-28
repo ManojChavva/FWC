@@ -1,8 +1,4 @@
-#Code by GVV Sharma
-#December 7, 2019
-#Revised July 15, 2020
-#released under GNU GPL
-#Functions related to triangle
+
 
 import numpy as np
 from line.funcs import *

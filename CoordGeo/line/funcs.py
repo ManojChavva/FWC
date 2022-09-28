@@ -1,8 +1,4 @@
-#Code by GVV Sharma
-#December 7, 2019
-#Revised July 15, 2020
-#released under GNU GPL
-#Functions related to line
+
 import numpy as np
 from numpy import linalg as LA
 #from line.params import *

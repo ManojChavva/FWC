@@ -1,9 +1,4 @@
-#Code by GVV Sharma
-#December 7, 2019
-#Revised July 15, 2020
-#Revised March 4, 2022
-#released under GNU GPL
-#Functions related to conics
+
 
 import numpy as np
 from params import *
