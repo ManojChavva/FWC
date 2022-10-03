@@ -52,16 +52,11 @@ B and C are the inputs.
 B               & (0, 2)         & Vertex B             \\ \hline
 C               & (0, -2)        & Vertex C             \\ \hline
 A               & (x,y)          & Vertex A             \\ \hline
-A1              & (x1, y1)       & Vertex A            \\ \hline
+A1              & (x1, y1)       & Vertex A             \\ \hline
 \end{tabular}
 \end{table}
 
 \section{Solution}
-\noindent Given ABC is an equilateral triangle i.e 
-\begin{equation}
-AB = BC = CA  
-\end{equation}
-
 \noindent Given the base with 2a is lies on the y-axis with the mid-point of the base is at origin. The vertices of the two points on y-axis will be
 
 \begin{equation}
@@ -74,8 +69,26 @@ a
 -a
 \end{pmatrix} }
 \end{equation}
+\noindent Given $\Delta$ABC is an equilateral triangle i.e 
+\begin{equation}
+ \norm{\vec{A}-\vec{B}}= \norm{\vec{B}-\vec{C}}= \norm{\vec{C}-\vec{A}} =2a
+\end{equation}
+\noindent As AB = AC, triangle is isoceles and by properties of isoceles triangle, altitude is perpendicular bisector of base.\\
 
-\noindent Since, the equilaterial triangle have all internal angles eaqual to  $60^0$ 
+\noindent Therefore $\angle$ADC = $\angle$ADB = $90^0$ and $\norm{\vec{O}-\vec{B}}= \norm{\vec{O}-\vec{D}}= \frac{a}{2}$ \\
+
+\noindent By Cosine laws,
+\begin{equation}
+\cos\vec{B} = \cos\vec{C} = \frac{a}{2} * \frac{1}{a} = \frac{1}{2}
+\end{equation}
+\begin{equation}
+\angle B = \angle C = \arccos\frac{1}{2} = 60^0
+\end{equation}
+ \begin{equation}
+ \angle A = 180^0 -(60^0 * 2) = 60^0
+  \end{equation}
+\noindent Therefore, the equilaterial triangle have all internal angles eaqual to  $60^0$ 
+
  \begin{equation}  
   \brak{\vec{x}-\vec{B}}^{\top} \brak{\vec{x}-\vec{C}}= \norm{\vec{x}-\vec{B}} \cdot \norm{\vec{x}-\vec{C}} \cdot \cos\theta 
  \end{equation}
