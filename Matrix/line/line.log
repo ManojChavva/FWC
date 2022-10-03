@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.22)  3 OCT 2022 15:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.22)  3 OCT 2022 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -543,7 +543,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 78--79
-\OT1/ptm/m/n/12 Therefore $[]$ADC = $[]$ADB = $\OT1/cmr/m/n/12 90[]$ \OT1/ptm/m
+\OT1/ptm/m/n/12 Therefore $[]$AOC = $[]$AOB = $\OT1/cmr/m/n/12 90[]$ \OT1/ptm/m
 /n/12 and
  []
 
@@ -591,7 +591,7 @@ amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on line.pdf (2 pages, 128489 bytes).
+Output written on line.pdf (2 pages, 128166 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  91 compressed objects within 1 object stream
