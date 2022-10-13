@@ -90,25 +90,43 @@ a
 %  \end{equation}
 %\noindent Therefore, the equilaterial triangle have all internal angles eaqual to  $60^0$ 
 
-\noindent Consider, two sides of equilateral triangle be $\vec{a}$ and $\vec{b}$ then the third side will be $ \vec{a} -\vec{b}$ \\
+\noindent Consider, two sides of equilateral triangle be $\vec{A}$ and $\vec{B}$ then the third side will be $ \vec{A} -\vec{B}$ 
+%Hence,
+%\begin{equation}
+%\norm{\vec{a}-\vec{b}}^2 = l
+%\end{equation}
+%\begin{equation}
+%\brak{\vec{a}-\vec{b}}^{\top} \brak{\vec{a}-\vec{b}} = l^2
+%\end{equation}
+%\begin{equation}
+%l^2 = 2 \vec{a}^{\top} \cdot \vec{b}
+%\end{equation}
+%\begin{equation}
+%l^2 = 2 \norm{\vec{a}}\norm{\vec{b}} \cos\theta
+%\end{equation}
+%\begin{equation}
+%\theta = \arccos\frac{1}{2} = 60^0
+\begin{equation}
+\norm{\vec{A}}=\norm{\vec{B}}=\norm{\vec{A-B}}\\
+\end{equation}
+\begin{equation}
+\norm{\vec{A}}^2=\norm{\vec{B}}^2=\norm{\vec{A-B}}^2\\
+\end{equation}
+\begin{equation}
+\norm{\vec{A}}^2+\norm{\vec{B}}^2-2\vec{A}^T\vec{B}=\norm{\vec{A}}^2=\norm{\vec{B}}^2\\
+\end{equation}
+\begin{equation}
+\frac{\vec{A}^T\vec{B}}{\norm{\vec{A}}^2}=\frac{\vec{A}^T\vec{B}}{\norm{\vec{B}^2}}=\frac{1}{2}
+\end{equation}
+%$\triangle$OAB is a equilateral triangle\\
 
-Hence,
-\begin{equation}
-\norm{\vec{a}-\vec{b}}^2 = l
-\end{equation}
-\begin{equation}
-\brak{\vec{a}-\vec{b}}^{\top} \brak{\vec{a}-\vec{b}} = l^2
-\end{equation}
-\begin{equation}
-l^2 = 2 \vec{a}^{\top} \cdot \vec{b}
-\end{equation}
-\begin{equation}
-l^2 = 2 \norm{\vec{a}}\norm{\vec{b}} \cos\theta
-\end{equation}
-\begin{equation}
-\theta = \arccos\frac{1}{2} = 60^0
-\end{equation}
-\noindent Therefore, the equilaterial triangle have all internal angles eaqual to  $60^0$
+\noindent Therefore, the  triangle have all internal angles eaqual to  $60^0$
+
+The angle between two vectors is given by 
+  \begin{align}
+    \label{eq:angle2d}
+    \theta = \cos^{-1}\frac{\vec{A}^{\top} \vec{B}}{\norm{A}\norm{B}}
+  \end{align}
 
  \begin{equation}  
   \brak{\vec{x}-\vec{B}}^{\top} \brak{\vec{x}-\vec{C}}= \norm{\vec{x}-\vec{B}} \cdot \norm{\vec{x}-\vec{C}} \cdot \cos\theta 
