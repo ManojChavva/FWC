@@ -36,18 +36,18 @@ import shlex
 #C = np.array(([4,0]))
 
 a = 6
-I = np.eye(2)
-u1 = np.array(([-a/2,0]))
-o1 = -u1
-V1 = I
-f1 = 0
-r1 = a/2
+I = np.eye(2)               
+u1 = np.array(([-a/2,0]))     
+o1 = -u1                        
+V1 = I                    
+f1 = 0              
+r1 = a/2                  
 V2 = I
-u2 = np.array(([0,0]))
-o2 = -u2
-c = a 
-f2 = -c**2 
-r2 = c
+u2 = np.array(([0,0]))             
+o2 = -u2                  
+c = a                        
+f2 = -c**2              
+r2 = c                 
 
 #for plotting
 
