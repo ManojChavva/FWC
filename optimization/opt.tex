@@ -73,7 +73,16 @@ Then, by using equation \ref{eq-2} we get:
 \begin{equation}
 r=\frac{50-x}{2\pi}
 \end{equation}
-
+The standard equation of the line in conics is given as :
+\begin{align}
+n^\top \vec{x} = c
+\end{align}
+\begin{equation}
+\begin{pmatrix}1 & 2\pi\end{pmatrix}  \vec{x} = 50
+\end{equation}
+\begin{align}
+\vec{x}  = \myvec{x\\1},
+\end{align}
 Now by using the formula for the area of the circle and square is:
 \begin{equation}
 \text{Area of square= }a^2
@@ -87,6 +96,24 @@ A=a^2+\pi r^2
 \end{equation}
 \begin{equation}
 A = \frac{x^2}{16} + \frac{(50-x)^2}{4\pi}
+\end{equation}
+The standard equation of the conics is given as :
+\begin{align}
+\vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
+\end{align}
+\begin{equation}
+\vec{V} = \begin{bmatrix}
+4\pi+16 & 0 \\
+0 & 0
+\end{bmatrix}
+\end{equation}
+\begin{equation}
+u^\top = \begin{bmatrix}
+800 & 0
+\end{bmatrix}
+\end{equation}
+\begin{equation}
+f = 16(50^2)
 \end{equation}
 The minimum value is caluculated by using gradient descent method.
 \begin{align}
