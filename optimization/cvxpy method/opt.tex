@@ -1,0 +1,175 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage[cmex10]{amsmath}
+\usepackage{array}
+\usepackage{gensymb}
+\usepackage{booktabs}
+\usepackage{etoolbox}
+\usepackage{amssymb}
+\usepackage{datetime} 
+\patchcmd{\section}{\centering}{}{}{}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+
+\makeatletter
+\newcommand\xleftrightarrow[2][]{%
+  \ext@arrow 9999{\longleftrightarrowfill@}{#1}{#2}}
+\newcommand\longleftrightarrowfill@{%
+  \arrowfill@\leftarrow\relbar\rightarrow}
+\makeatother
+\title{Optimizb,b,bation}
+\author{Manoj Chavva} 
+\date{october 2022} 
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+
+\begin{document}
+\maketitle
+\section{Problem Statement}
+
+\noindent A wire of length 50 m is cut into two pieces. One piece of the wire is bent in the shape of a square and the other in the shape of a circle. What should be the length of each piece so that the combined area of the two is minimum \\
+
+\noindent \textbf{To Find:} \\
+The value of the length of each piece so that the combined area of the two is minimum from the two figures that are square and circle.
+
+\noindent \textbf{Given:} \\
+Length of the wire is 50m
+\section{solution}
+\begin{equation}
+\text{length of the square is} \quad \vec{a} \quad \text{m} .
+\end{equation} 
+Then length of the other piece for the shape of the circle is \begin{equation}
+(50-a) \text{m}
+\end{equation} 
+Perimeter of the square with side a is given by: \\
+\begin{equation}
+\text{Perimeter of the square = } 4a \\
+\label{eq-1}
+\end{equation}
+%
+%Now, we know from the above condition that the total length of all four sides of the square is x.\\
+%
+%Then, by using equation \ref{eq-1} we get:
+%\begin{equation}
+%x = \frac{a}{4}
+%\end{equation}
+
+Similarly, we know the formula for the circumference of the circle with radius r is given by:
+\begin{equation}
+\text{Circumference of a circle= }2\pi r
+\label{eq-2}
+\end{equation}
+So, the total length is 
+\begin{equation}
+4x + 2\pi r = 50
+\end{equation} 
+The standard equation of the line in conics is given as :
+\begin{align}
+n^\top \vec{x} = c
+\end{align}
+\begin{equation}
+\begin{pmatrix}1 & 2\pi\end{pmatrix}  \vec{x} = 25
+\end{equation}
+
+\begin{align}
+\vec{x}  = \myvec{x\\r}
+\end{align}
+%Now, we know from the above condition that the total length of all circles is (50-x).
+%Then, by using equation \ref{eq-2} we get:
+%\begin{equation}
+%r=\frac{50-x}{2\pi}
+%\end{equation}
+%%The standard equation of the line in conics is given as :
+%\begin{align}
+%n^\top \vec{x} = c
+%\end{align}
+%\begin{equation}
+%\begin{pmatrix}1 & 2\pi\end{pmatrix}  \vec{x} = 50
+%\end{equation}
+%\begin{align}
+%\vec{x}  = \myvec{x\\r}
+%\end{align}
+Now by using the formula for the area of the circle and square is:
+\begin{equation}
+\text{Area of square= }a^2
+\end{equation}
+\begin{equation}
+\text{Area of the circle= }\pi r^2
+\end{equation}
+Now, the combined area(A) 
+\begin{equation}
+A=a^2+\pi r^2
+\end{equation}
+%\begin{equation}
+%A = \frac{x^2}{16} + \frac{(50-x)^2}{4\pi}
+%\end{equation}
+The area of two figures is grepresented as :
+\begin{align}
+\vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
+\end{align}
+\begin{equation}
+\vec{V} = \begin{pmatrix}
+1 & 0 \\
+0 & \pi
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+u^\top = \begin{pmatrix}
+0 & 0
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+f = 0
+\end{equation}
+\noindent The minimum area is 
+\begin{align}
+\min_{x} \vec{x}^{\top}\vec{V}\vec{x} 
+\end{align}
+\noindent Such that, 
+\begin{equation}
+\begin{pmatrix}1 & 2\pi\end{pmatrix}  \vec{x} -25 == 0
+\end{equation}
+Solving using cvxpy, we get
+\begin{equation}
+\min_{x} \vec{x}^{\top}\vec{V}\vec{x} = 87.53 \quad m^2
+\end{equation}
+The length of each piece is \\
+Square = 4a = 28 m \\
+circle = 2 $\pi$ r = 21.98 m  
+%The minimum value is caluculated by using gradient descent method.
+%\begin{align}
+%        x_{n+1} &= x_n - \alpha \nabla f(x_n) \\
+%        \implies x_{n+1} &= x_n - \alpha\brak{\frac{x}{8}-\frac{50-x}{6.28}}
+%\end{align}
+%where \\
+%\begin{enumerate}
+%\item $\alpha$ = 0.001
+%\item $x_{n+1}$ is current value
+%\item $x_{n}$ is previous value
+%\item precession = 0.00000001
+%\item maximum iterations = 100000000
+%\end{enumerate}
+%The minimum values obtained from the python code \vspace{5mm}\\
+%The given function has minimum value at 28.011 i.e
+%\begin{equation}
+%\frac{200}{4+\pi}
+%\end{equation}
+%\begin{figure}[h]
+%\includegraphics[width=1\columnwidth]{opt2.png}
+%\label{fig:triangle}
+%\end{figure}
+%Then, the length of the circle wire is 50-x and substitute the x value in it, we get:
+%\begin{equation}
+%\frac{50\pi}{4+\pi}
+%\end{equation}
+%Hence, the length of square is $\frac{200}{4+\pi}$ m and circle wire is $\frac{50}{4+\pi}m$ to get the minimum area.
+\end{document}
