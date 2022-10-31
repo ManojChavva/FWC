@@ -33,12 +33,14 @@ void PyHal_GPIO_SetDir(uint8_t gpionum,uint8_t iomode);
 int PyHal_GPIO_GetDir(uint8_t gpionum);
 int PyHal_GPIO_Set(uint8_t gpionum, uint8_t gpioval);
 int PyHal_GPIO_Get(uint8_t gpionum);
-
+#define	CLK_PIN	18
+void disp(int num);
 
 int main(void)
 {
-    uint32_t i=0,j=0,k=0;
-    uint32_t X=0,Y=0,Z=0,F;    
+    uint32_t int Q1=0,Q2=0,Q3=0,Q4=0,Q44=1;
+uint32_t int D1,D2,D3,D4;
+     
     SOFTWARE_VERSION_STR = "qorc-onion-apps/qf_hello-fpga-gpio-ctlr";
     
     qf_hardwareSetup();
@@ -63,15 +65,52 @@ int main(void)
 PyHal_GPIO_SetDir(2,0); //Input
 PyHal_GPIO_SetDir(4,0); //Input
 PyHal_GPIO_SetDir(6,0); //Input
+PyHal_GPIO_SetDir(6,0); //Input
 PyHal_GPIO_SetDir(22,1); //Output
-while(1)
-{
-    X = PyHal_GPIO_Get(2);
-    Y = PyHal_GPIO_Get(4);
-    Z = PyHal_GPIO_Get(6);
-    F=(!X|Y);
-    PyHal_GPIO_Set(22,F);
+PyHal_GPIO_SetDir(20,1); //Output
+PyHal_GPIO_SetDir(18,1); //Output
+PyHal_GPIO_SetDir(16,1); //Output
+while(1) {
 
+ PyHal_GPIO_Set(CLK_PIN, 0);
+    HAL_DelayUSec(2000000);    
+    PyHal_GPIO_Set(CLK_PIN, 1);
+    
+    sevenseg_setup();    //Sevenseg ready for display
+    sevenseg(a,b,c,d,e,f,g); 
+     HAL_DelayUSec(2000000);    
+     
+       Q1 = PyHal_GPIO_Get(2);
+    Q2 = PyHal_GPIO_Get(4);
+    Q3= PyHal_GPIO_Get(6)
+    Q4= PyHal_GPIO_Get(8)
+    PyHal_GPIO_Set(22,F);
+    
+    disp(Q4,Q3,Q2,Q1);
+    //clk1();
+    PyHal_GPIO_Set(CLK_PIN, 1);
+     D1=Q44;
+     Q1=D1;
+    disp(Q4,Q3,Q2,Q1);
+   // clk1();
+   PyHal_GPIO_Set(CLK_PIN, 1);
+   D2=Q1;
+   Q2=D2;
+    disp(Q4,Q3,Q2,Q1);
+    //clk1();
+    PyHal_GPIO_Set(CLK_PIN, 1);  
+    D3=Q2;
+    Q3=D3;
+    disp(Q4,Q3,Q2,Q1);
+   //clk1();
+   PyHal_GPIO_Set(CLK_PIN, 1);
+   D4=Q3;
+   Q4=D4;
+   Q44=!Q4;  
+
+   disp(Q4,Q3,Q2,Q1);
+      //clk1();
+PyHal_GPIO_Set(CLK_PIN, 1);
 }
 /***********************END flash IMPL********************************/
 
